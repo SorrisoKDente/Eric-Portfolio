@@ -6,11 +6,16 @@
   <title>Formação - Meu Site Pessoal</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<!-- Iniciar a página em dark mode e um botão para alternar entre light/dark -->
+<body class="dark-mode">
+  <button class="toggle-theme" onclick="toggleDarkMode()" id="themeBtn">☀️/🌙</button>
+
+  <!-- Título da página -->
   <header>
     <h1>Formação Educacional</h1>
   </header>
 
+  <!-- Menu para navegação -->
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">Sobre Mim</a>
@@ -19,6 +24,7 @@
     <a href="contact.html">Contato</a>
   </nav>
 
+  <!-- Conteúdo da página -->
   <main class="content">
     <section id="education">
       <h2>Minha Formação</h2>
@@ -42,6 +48,8 @@
     </section>
   </main>
 
+  <!-- Carregar o script para altear entre light/dark mode -->
   <script src="script.js"></script>
+
 </body>
 </html>

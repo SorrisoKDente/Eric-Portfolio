@@ -6,11 +6,16 @@
   <title>Sobre Mim - Meu Site Pessoal</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<!-- Iniciar a página em dark mode e um botão para alternar entre light/dark -->
+<body class="dark-mode">
+  <button class="toggle-theme" onclick="toggleDarkMode()" id="themeBtn">☀️/🌙</button>
+
+  <!-- Título da página -->
   <header>
     <h1>Sobre Mim</h1>
   </header>
 
+  <!-- Menu para navegação -->
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">Sobre Mim</a>
@@ -19,10 +24,11 @@
     <a href="contact.html">Contato</a>
   </nav>
 
+  <!-- Conteúdo da página -->
   <main class="content">
     <section id="about">
       <h2>Quem Sou Eu?</h2>
-      <p>Analista de Suporte Técnico com mais de 4 anos de experiência em suporte a software e produtos de rede. Habilidade comprovada em diagnosticar e resolver problemas técnicos de forma eficiente, garantindo a satisfação do cliente. Com grande interesse em aprendizado contínuo e crescimento profissional, sempre buscando expandir conhecimentos e agregar valor à equipe.
+      <p>Analista de Suporte Técnico da Intelbras com mais de 4 anos de experiência em suporte a software e produtos de rede. Habilidade comprovada em diagnosticar e resolver problemas técnicos de forma eficiente, garantindo a satisfação do cliente. Com grande interesse em aprendizado contínuo e crescimento profissional, sempre buscando expandir conhecimentos e agregar valor à equipe.
       </p>
       <br>
       <p>Recentemente comecei o curso de Engenharia de Software e descobri que esta é a minha paixão. Meus interesses estão focados na área de programação para jogos e backend</p>
@@ -32,6 +38,7 @@
     </section>
   </main>
 
+  <!-- Carregar o script para altear entre light/dark mode -->
   <script src="script.js"></script>
 </body>
 </html>

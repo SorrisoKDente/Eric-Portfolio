@@ -4,13 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contato - Meu Site Pessoal</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
+<!-- Iniciar a página em dark mode e um botão para alternar entre light/dark -->
+<body class="dark-mode">
+  <button class="toggle-theme" onclick="toggleDarkMode()" id="themeBtn">☀️/🌙</button>
+
+  <!-- Título da página -->
   <header>
     <h1>Contato</h1>
   </header>
 
+  <!-- Menu para navegação -->
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">Sobre Mim</a>
@@ -19,6 +24,7 @@
     <a href="contact.html">Contato</a>
   </nav>
 
+  <!-- Conteúdo da página -->
   <main class="content">
     <section id="contact">
       <h2>Entre em Contato</h2>
@@ -37,6 +43,7 @@
     </section>
   </main>
 
+  <!-- Carregar o script para altear entre light/dark mode -->
   <script src="script.js"></script>
 </body>
 </html>
